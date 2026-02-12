@@ -1,49 +1,71 @@
-# thermal-breaker-miyabi-core
+# 🌸 Thermal Breaker Miyabi Core
 
-**Thermal Breaker Miyabi Core** is an advanced thermal optimizer Magisk module designed to reduce overly aggressive thermal throttling while preserving essential hardware protections.
+**Thermal Breaker Miyabi Core** is a performance-oriented Magisk module designed to refine Android thermal policies and reduce overly aggressive throttling — without disabling critical hardware protection mechanisms.
 
-Instead of disabling safety systems, this module *refines thermal policies* for:
-- ⚡ Improved sustained CPU & GPU performance  
-- 🔥 Less unnecessary throttling  
-- 🎯 Better responsiveness under load  
-- 🧠 Custom ROM & Xiaomi tuned behavior
-
-This release focuses on:
-- Xiaomi devices (MIUI & custom ROM: SuperiorOS, Android 11–13)
-- MTK and Snapdragon support
+This module focuses on delivering more stable sustained performance while maintaining system safety.
 
 ---
 
-## 📦 Files
+## ⚡ Key Features
 
-| File | Purpose |
-|------|---------|
-| `Thermal-Breaker-Miyabi-Core-v1.0.0.zip` | Main module ZIP |
-| `update.json` | Auto-update configuration |
-| `changelog.txt` | Release changes |
-| `README.md` | This documentation |
+- 🔥 Optimized thermal behavior  
+- ⚙ Reduced unnecessary throttling  
+- 🎯 Improved sustained performance under load  
+- 🧩 Custom ROM friendly tuning  
+- 🛡 Preserves essential hardware thermal protection  
+- 💫 Systemless installation via Magisk  
+
+---
+
+## 🎯 Target Environment
+
+Optimized and tested primarily for:
+
+- Xiaomi devices (MIUI & Custom ROM)
+- SuperiorOS Android 11–13
+- MediaTek & Snapdragon platforms
+
+Other devices may work, but compatibility is not guaranteed.
+
+---
+
+## 📦 Installation
+
+1. Install via **Magisk App**
+2. Reboot device
+3. Enjoy improved thermal balance & stability
+
+---
+
+## 🔄 Auto Update Support
+
+This module supports Magisk in-app updates via `update.json`.
+
+Magisk will automatically detect new versions when available.
 
 ---
 
 ## 📜 Changelog
 
-See [changelog.txt](./changelog.txt)
-
----
-
-## 📡 Auto-Update Support
-
-Magisk detects updates via `update.json` and allows easy in-app updating.
+See: [changelog.txt](./changelog.txt)
 
 ---
 
 ## ⚠ Disclaimer
 
-This module modifies thermal behavior but **does not disable hardware protection**.  
-Use responsibly. Developer is not liable for misuse.
+This module modifies thermal behavior parameters but **does NOT disable hardware-level protection systems**.
+
+Use responsibly.  
+The developer is not responsible for hardware damage caused by extreme usage or misuse.
 
 ---
 
 ## 👤 Developer
 
-Made with ❤️ by **Rama-X2**
+Developed and maintained by **Rama-X2**
+
+---
+
+## ⭐ Support
+
+If you like this project, consider starring the repository.
