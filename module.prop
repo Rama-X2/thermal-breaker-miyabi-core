@@ -1,0 +1,7 @@
+id=thermal-breaker-miyabi-core
+name=Thermal Breaker Miyabi Core
+version=v1.0.1
+versionCode=101
+author=Rama-X2
+description=Miyabi Core thermal optimizer focused on reducing aggressive throttling and improving performance stability without disabling hardware protection.
+updateJson=https://raw.githubusercontent.com/Rama-X2/thermal-breaker-miyabi-core/main/update.json
