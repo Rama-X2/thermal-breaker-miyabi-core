@@ -1,0 +1,8 @@
+Thermal Breaker Miyabi Core v1.0.0
+
+Initial Release
+
+- Smart thermal policy optimization
+- Reduced aggressive throttling behavior
+- Compatible with MTK and Snapdragon devices
+- Optimized for Xiaomi & SuperiorOS Android 11-13
