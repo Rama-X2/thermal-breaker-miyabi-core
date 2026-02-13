@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-Thermal Breaker Miyabi Core v1.0.5
-
-- Fixed ASCII
-=======
 Thermal Breaker Miyabi Core v2.0.0
 
 v2.0.0
@@ -15,4 +10,3 @@ v2.0.0
 
 Major update.
 This version focuses on rebuilding the thermal core for more consistent and adaptive behavior across different environments.
->>>>>>> e11bcad (v2.0.0: Rework thermal core logic and improve MTK stability)
