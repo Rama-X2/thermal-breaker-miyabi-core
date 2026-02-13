@@ -34,15 +34,15 @@ busybox sleep 1
 busybox sleep 1
   ui_print "⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀"
   ui_print "           ╔══════════════════════╗               "
-  ui_print "           ║          (≧◡≦)           ║              "
-  ui_print "           ║        Miyabi Core       ║              "
+  ui_print "           ║           (≧◡≦)         ║              "
+  ui_print "           ║        Miyabi Core      ║              "
   ui_print "           ╚══════════════════════╝               "
   ui_print "                      ／l、                          "
   ui_print "                    （ﾟ､ ｡ ７                        "
   ui_print "                     l、  ~ヽ                        "
   ui_print "                     じしf_, )ノ                     "
   busybox sleep 1
-  ui_print "     『 Thermal Breaker Miyabi Core v1.0.4 』          "
+  ui_print "     『 Thermal Breaker Miyabi Core v1.0.5 』          "
   busybox sleep 1
   ui_print "⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀"
   busybox sleep 1

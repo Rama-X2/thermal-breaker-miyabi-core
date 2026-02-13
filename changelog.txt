@@ -1,5 +1,3 @@
-Thermal Breaker Miyabi Core v1.0.2
+Thermal Breaker Miyabi Core v1.0.5
 
-- Fixed service execution timing
-- Improved thermal binary handling
-- Minor stability improvements
+- Fixed ASCII
