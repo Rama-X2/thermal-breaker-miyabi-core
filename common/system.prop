@@ -1,0 +1,4 @@
+## MIUI prop
+# Technologyc props
+ro.vendor.dfps.enable=false
+ro.vendor.smart_dfps.enable=false

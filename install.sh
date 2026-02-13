@@ -1,3 +1,7 @@
+# Copyright (C) 2026 Rama-X2
+# Licensed under the GNU General Public License, Version 3.0
+# Source: https://github.com/Rama-X2/thermal-breaker-miyabi-core
+
 SKIPMOUNT=false
 
 PROPFILE=true
@@ -29,23 +33,23 @@ busybox sleep 1
   ui_print " github : https://github.com/Rama-X2 "
 busybox sleep 1
   ui_print "⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀"
-  ui_print "         ╔══════════════════════╗               "
-  ui_print "         ║        (≧◡≦)              ║              "
-  ui_print "         ║      Miyabi Core          ║              "
-  ui_print "         ╚══════════════════════╝               "
+  ui_print "           ╔══════════════════════╗               "
+  ui_print "           ║          (≧◡≦)           ║              "
+  ui_print "           ║        Miyabi Core       ║              "
+  ui_print "           ╚══════════════════════╝               "
   ui_print "                      ／l、                          "
   ui_print "                    （ﾟ､ ｡ ７                        "
   ui_print "                     l、  ~ヽ                        "
   ui_print "                     じしf_, )ノ                     "
   busybox sleep 1
-  ui_print "          『 Thermal Breaker Miyabi Core v1.0.1 』          "
+  ui_print "     『 Thermal Breaker Miyabi Core v1.0.2 』          "
   busybox sleep 1
   ui_print "⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀"
   busybox sleep 1
-  ui_print "Loading..."
+  ui_print " Loading..."
   busybox sleep 1
-  ui_print "Installing..."
-  ui_print "Wait.."
+  ui_print " Installing..."
+  ui_print " Wait.."
   busybox sleep 1
   ui_print " Done!!!! "
   busybox sleep 1

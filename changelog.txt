@@ -1,4 +1,4 @@
-Thermal Breaker Miyabi Core v1.0.1
+Thermal Breaker Miyabi Core v1.0.2
 
 - Fixed service execution timing
 - Improved thermal binary handling
