@@ -42,19 +42,19 @@ busybox sleep 1
   ui_print "                     l、  ~ヽ                        "
   ui_print "                     じしf_, )ノ                     "
   busybox sleep 1
-  ui_print "     『 Thermal Breaker Miyabi Core v1.0.2 』          "
+  ui_print "     『 Thermal Breaker Miyabi Core v1.0.3 』          "
   busybox sleep 1
   ui_print "⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀"
   busybox sleep 1
-  ui_print " Loading..."
+  ui_print " - Loading..."
   busybox sleep 1
-  ui_print " Installing..."
-  ui_print " Wait.."
+  ui_print " - Installing..."
+  ui_print " - Wait.."
   busybox sleep 1
-  ui_print " Done!!!! "
+  ui_print " - Done!!!! "
   busybox sleep 1
   ui_print "__________________● REBOOT DEVICE ●__________________"
-
+  ui_print "                   "
 }
 
 
