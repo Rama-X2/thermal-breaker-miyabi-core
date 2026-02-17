@@ -1,6 +1,6 @@
-『 Thermal Breaker Miyabi Core v2.1.0 』
+『 Thermal Breaker Miyabi Core v2.2.0 』
 
-v2.1.0
+v2.2.0
 
 - Added MIUI DFPS control props
 - Improved thermal override handling

@@ -147,5 +147,8 @@ imageless_magisk || unmount_magisk_img
 $BOOTMODE || recovery_cleanup
 rm -rf $TMPDIR $MOUNTPATH
 
+ui_print " ⚠️ I'm not responsible in case of battery damage in the long run, stay #DWYOR "
+ui_print " Module Instalizing "
+ui_print " By: R A M A "
 ui_print "- Done"
 exit 0

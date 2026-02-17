@@ -44,7 +44,7 @@ busybox sleep 1
   ui_print "                     l、  ~ヽ                        "
   ui_print "                     じしf_, )ノ                     "
   busybox sleep 1
-  ui_print "     『 Thermal Breaker Miyabi Core v2.1.0 』          "
+  ui_print "     『 Thermal Breaker Miyabi Core v2.2.0 』          "
   busybox sleep 1
   ui_print "⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀"
   busybox sleep 1
@@ -85,3 +85,5 @@ set_permissions() {
   # set_perm  $MODPATH/system/bin/dex2oat         0     2000    0755      u:object_r:dex2oat_exec:s0
   # set_perm  $MODPATH/system/lib/libart.so       0     0       0644
 }
+
+# You can add more functions to assist your custom script code
