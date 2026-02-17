@@ -2,11 +2,9 @@
 
 v2.2.0
 
-- Added MIUI DFPS control props
-- Improved thermal override handling
-- Disabled additional MSM thermal control paths
-- Disabled storage I/O statistics collection
-- Minor performance refinement
+- Fixed duplicate module installation issue
+- Improved thermal service override handling
+- Reduced thermal service restart loop
+- Refined MSM thermal disable logic
+- Stability improvement
 
-This update improves compatibility with MIUI-based systems
-and refines background thermal control behavior.
