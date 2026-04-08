@@ -120,7 +120,7 @@ If instability occurs:
 ## 📜 Changelog
 
 See:
->>> `changelog.txt`
+- `changelog.txt`
 
 ---
 
