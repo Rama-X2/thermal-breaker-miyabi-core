@@ -6,7 +6,7 @@ Unlike extreme “thermal disabler” tweaks, this module focuses on **balancing
 
 ---
 
-## 🧠 Philosophy
+##  Philosophy
 
 Modern Android devices often apply conservative thermal limits that trigger early throttling.
 While this protects hardware, it can also significantly reduce sustained performance during:
@@ -24,18 +24,18 @@ Instead, it **refines and restructures thermal profiles** to allow more intellig
 
 ## ⚡ Key Features
 
-* 🔥 Reworked thermal core logic
-* 🎯 Improved sustained performance under heavy load
-* ⚙ Reduced unnecessary early throttling
-* 🧩 Optimized thermal profile configuration
-* 🛡 Preserves critical hardware thermal safety mechanisms
-* 📦 Fully systemless installation via Magisk
-* 🔄 Built-in Magisk auto-update support
-* 🧼 Clean and structured thermal configuration framework
+*  Reworked thermal core logic
+*  Improved sustained performance under heavy load
+*  Reduced unnecessary early throttling
+*  Optimized thermal profile configuration
+*  Preserves critical hardware thermal safety mechanisms
+*  Fully systemless installation via Magisk
+*  Built-in Magisk auto-update support
+*  Clean and structured thermal configuration framework
 
 ---
 
-## 🚀 What Makes v2.0.0 Special?
+##  What Makes v2.0.0 Special?
 
 Version 2.0.0 introduces a **complete core logic rework**, including:
 
@@ -49,13 +49,13 @@ This update significantly improves consistency under prolonged workload scenario
 
 ---
 
-## 🎯 Target Environment
+##  Target Environment
 
 Optimized and tested primarily for:
 
-* 📱 Xiaomi devices (MIUI & Custom ROM)
-* 🧬 SuperiorOS Android 11–13
-* ⚙ MediaTek & Snapdragon platforms
+*  Xiaomi devices (MIUI & Custom ROM)
+*  SuperiorOS Android 11–13
+*  MediaTek & Snapdragon platforms
 
 Other devices may work, but compatibility is not guaranteed.
 
@@ -67,7 +67,7 @@ Results may vary depending on:
 
 ---
 
-## 📊 Performance Expectations
+##  Performance Expectations
 
 After installation, you may notice:
 
@@ -120,7 +120,7 @@ If instability occurs:
 ## 📜 Changelog
 
 See:
-👉 `changelog.txt`
+>>> `changelog.txt`
 
 ---
 
