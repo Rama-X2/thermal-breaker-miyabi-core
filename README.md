@@ -22,7 +22,7 @@ Instead, it **refines and restructures thermal profiles** to allow more intellig
 
 ---
 
-## ⚡ Key Features
+##  Key Features
 
 *  Reworked thermal core logic
 *  Improved sustained performance under heavy load
