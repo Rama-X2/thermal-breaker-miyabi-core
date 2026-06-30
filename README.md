@@ -52,5 +52,5 @@ Miyabi Core thermal optimizer focused on reducing aggressive throttling and impr
 
 ## 👥 Credits & Source
 
-- **Developer**: Rama-X2 (Rama Armytha) & Antigravity (Advanced Agentic Coding)
+- **Developer**: Rama-X2 (Rama Armytha)
 - **Source Code**: [GitHub Repository](https://github.com/Rama-X2/thermal-breaker-miyabi-core)
