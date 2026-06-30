@@ -1,159 +1,56 @@
-# 🌸 Thermal Breaker Miyabi Core
+# Thermal Breaker Miyabi Core (v3.0.0-Universal)
 
-**Thermal Breaker Miyabi Core** is a performance-oriented Magisk module engineered to intelligently refine Android thermal policies and reduce overly aggressive throttling — without disabling essential hardware-level protection mechanisms.
-
-Unlike extreme “thermal disabler” tweaks, this module focuses on **balancing performance and safety**, ensuring your device maintains stable sustained performance under load while preserving long-term hardware integrity.
+Miyabi Core thermal optimizer focused on reducing aggressive throttling and improving performance stability across all Android devices, chipsets, and ROMs, without disabling hardware safety protections.
 
 ---
 
-##  Philosophy
+## ✦ Key Features
 
-Modern Android devices often apply conservative thermal limits that trigger early throttling.
-While this protects hardware, it can also significantly reduce sustained performance during:
-
-* Gaming
-* Heavy multitasking
-* Long recording sessions
-* Video rendering
-* Benchmark stress testing
-
-Thermal Breaker Miyabi Core does **not remove thermal protection**.
-Instead, it **refines and restructures thermal profiles** to allow more intelligent and performance-aware scaling.
+1. **Universal Chipset Support**: Fully compatible with Qualcomm Snapdragon, MediaTek, Exynos, Google Tensor, Unisoc, and other platforms.
+2. **GPU Throttling Bypass**: Supports Adreno (KGSL), Mali, and PowerVR graphics architectures.
+3. **Universal Cooling State Locker**: Dynamically scans `/sys/class/thermal/cooling_device*` and locks throttle levels of CPU/GPU to performance state (`0`), making them read-only to prevent user-space thermal services from capping clock speeds.
+4. **Guardian Background Daemon**: Runs a battery-friendly monitor loop that ensures cooling states remain unlocked every 10 seconds **only when the screen is active** (saving battery when the phone is idle).
+5. **No Charging Caps / Failsafe**: Avoids the "slow charging / 0% battery freeze" issue by keeping critical Android core thermal HALs running while bypassing CPU/GPU-specific throttling in the kernel.
+6. **No Bootloops**: Safe architecture. Unlike older modules, it does not replace core system libraries (`libthermalservice.so`), preventing bootloops on Android 12 to 15+.
+7. **Xiaomi-Specific Optimization**: Automatically detects Xiaomi/POCO/Redmi devices and extracts vendor-specific optimized config files (`thermal-*.conf`). Other devices use the universal kernel-level locker directly.
+8. **Detailed Diagnostics**: Logs device detection and tuning processes inside `/data/adb/modules/thermal-breaker-miyabi-core/thermal_breaker.log`.
 
 ---
 
-##  Key Features
+## 📱 Compatibility
 
-*  Reworked thermal core logic
-*  Improved sustained performance under heavy load
-*  Reduced unnecessary early throttling
-*  Optimized thermal profile configuration
-*  Preserves critical hardware thermal safety mechanisms
-*  Fully systemless installation via Magisk
-*  Built-in Magisk auto-update support
-*  Clean and structured thermal configuration framework
+- **Chipsets**: Snapdragon, MediaTek, Exynos, Google Tensor, Unisoc, etc.
+- **GPUs**: Adreno, Mali, Immortalis, PowerVR.
+- **Android Versions**: Android 10, 11, 12, 13, 14, 15 (and above).
+- **Architectures**: 64-bit (arm64-v8a) and 32-bit (armeabi-v7a).
+- **ROMs**: Support for all Custom ROMs (Superior OS, LineageOS, Evolution X, PixelOS, etc.) and OEM stock ROMs (HyperOS, OneUI, Pixel, ColorOS, OriginOS, etc.).
+- **Root Managers**: Magisk, KernelSU, APatch.
 
 ---
 
-##  What Makes v2.0.0 Special?
+## 📦 How to Install
 
-Version 2.0.0 introduces a **complete core logic rework**, including:
-
-* Refined thermal-engine structure
-* Improved MediaTek stability handling
-* Expanded multi-profile configuration support
-* Cleaner thermald integration
-* Better balance between temperature control and sustained performance
-
-This update significantly improves consistency under prolonged workload scenarios.
-
----
-
-##  Target Environment
-
-Optimized and tested primarily for:
-
-*  Xiaomi devices (MIUI & Custom ROM)
-*  SuperiorOS Android 11–13
-*  MediaTek & Snapdragon platforms
-
-Other devices may work, but compatibility is not guaranteed.
-
-Results may vary depending on:
-
-* Kernel implementation
-* Vendor thermal framework
-* ROM-level thermal modifications
+1. Compress all files and directories in this folder (including `common`, `META-INF`, `xiaomi_files`, `install.sh`, `module.prop`, `LICENSE`, `README.md`, `changelog.txt`) into a standard `.zip` file.
+   > **Note**: Make sure `install.sh` and `module.prop` are at the root level of the archive, not nested inside another folder.
+2. Open your Root Manager (Magisk Manager, KernelSU, or APatch) and select **Install from storage**.
+3. Flash the `.zip` file and wait for the installer to finish detecting your device properties.
+4. **Reboot your device** to apply changes.
+5. (Optional) Verify operation by inspecting the log:
+   ```bash
+   cat /data/adb/modules/thermal-breaker-miyabi-core/thermal_breaker.log
+   ```
 
 ---
 
-##  Performance Expectations
+## ⚠️ Warning & Disclaimer
 
-After installation, you may notice:
-
-* More stable FPS during gaming
-* Reduced sudden CPU/GPU frequency drops
-* Smoother long-session performance
-* Less aggressive mid-load throttling
-
-⚠ This is **not a benchmark booster module**.
-It is designed for **real-world sustained performance balance**.
+* **Use at your own risk**: By removing software throttling limits, your device will run hotter than usual under sustained heavy loads (like 3D gaming or benchmarking).
+* **Cooling Recommendation**: It is **strongly recommended** to use an external fan cooler (phone cooler) when playing games for extended periods. This keeps your battery and SoC cool, preserving their long-term health.
+* **Failsafe**: Hardware-level emergency thermal shutdown remains intact. The device will automatically turn off safely if it reaches critical threshold temperatures (usually 100°C+).
 
 ---
 
-## 📦 Installation
+## 👥 Credits & Source
 
-1. Install via **Magisk App**
-2. Reboot device
-3. Allow system to stabilize after first boot
-4. Enjoy improved thermal balance
-
-Recommended:
-Clean install when upgrading major versions (e.g., 1.x → 2.x).
-
----
-
-## 🔄 Auto Update Support
-
-This module supports Magisk in-app updates via `update.json`.
-
-Magisk will automatically detect and notify you when a newer version is available.
-
-No manual checking required.
-
----
-
-## 🧩 Compatibility Notes
-
-* Works best on stock thermal frameworks
-* Not recommended to stack with other thermal-disabling modules
-* Avoid combining with extreme performance mods unless tested carefully
-
-If instability occurs:
-
-* Disable other thermal-related modules
-* Reboot
-* Test again
-
----
-
-## 📜 Changelog
-
-See:
-- `changelog.txt`
-
----
-
-## ⚠ Disclaimer
-
-This module modifies system thermal configuration behavior but **does NOT disable hardware-level thermal protection systems**.
-
-However:
-
-* Overclocking
-* Poor ventilation
-* Extreme gaming in high ambient temperatures
-
-may still cause overheating.
-
-The developer is not responsible for hardware damage caused by misuse or unsafe operating conditions.
-
-Use responsibly.
-
----
-
-## 👤 Developer
-
-Developed and maintained by **Rama-X2**
-
----
-
-## ⭐ Support & Contribution
-
-If you find this module useful:
-
-* ⭐ Star the repository
-* 🐛 Report issues properly with logs
-* 💬 Provide structured feedback
-
-Constructive feedback helps improve stability and compatibility across devices.
+- **Developer**: Rama-X2 (Rama Armytha) & Antigravity (Advanced Agentic Coding)
+- **Source Code**: [GitHub Repository](https://github.com/Rama-X2/thermal-breaker-miyabi-core)

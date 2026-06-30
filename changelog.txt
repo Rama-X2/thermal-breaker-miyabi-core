@@ -1,10 +1,21 @@
-『 Thermal Breaker Miyabi Core v2.2.0 』
+======================================================
+           CHANGELOG - THERMAL BREAKER MIYABI CORE
+======================================================
 
-v2.2.0
+v3.0.0 (Universal Release) - 2026-06-30
+------------------------------------------------------
+* MAJOR REWRITE: Made the module fully universal! Compatible with all chipsets (Snapdragon, MediaTek, Exynos, Google Tensor, Unisoc) and all Android versions (Android 10-15+).
+* FIXED: Critical bootloop bug on Android 12+ and non-Xiaomi devices caused by overriding 'libthermalservice.so'. Deleted this file.
+* FIXED: Slow charging and battery status freezes. Optimized configs are now conditionally installed only on Xiaomi/POCO/Redmi devices.
+* ADDED: Universal Cooling Device State Locker (Adreno, Mali, and PowerVR GPUs). Locks CPU/GPU throttle levels to maximum performance (state 0) and makes them read-only.
+* ADDED: Dynamic Service Stopper to disable non-essential thermal services while keeping Android's core thermal HAL active.
+* ADDED: Guardian Background Daemon which periodically resets throttle levels when the screen is turned on (saves battery when the phone is sleeping).
+* ADDED: Automatic device and chipset architecture detection in the Magisk installer.
+* REMOVED: Thousands of bloated comment lines in 'uninstall.sh' to optimize module zip size.
+* ADDED: Detailed logging support inside '/data/adb/modules/thermal-breaker-miyabi-core/thermal_breaker.log'.
+* ADDED: Explicit support for PowerVR GPUs in the cooling state scanner.
 
-- Fixed duplicate module installation issue
-- Improved thermal service override handling
-- Reduced thermal service restart loop
-- Refined MSM thermal disable logic
-- Stability improvement
-
+v2.2.0 - Previous Release
+------------------------------------------------------
+* Initial public release with Miyabi Core optimization adjustments.
+* Focuses on reducing aggressive thermal throttling for Xiaomi devices.
