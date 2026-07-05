@@ -17,7 +17,7 @@ Miyabi Core thermal optimizer focused on reducing aggressive throttling and impr
 
 ---
 
-## 📱 Compatibility
+## Compatibility
 
 - **Chipsets**: Snapdragon, MediaTek, Exynos, Google Tensor, Unisoc, etc.
 - **GPUs**: Adreno, Mali, Immortalis, PowerVR.
@@ -28,7 +28,7 @@ Miyabi Core thermal optimizer focused on reducing aggressive throttling and impr
 
 ---
 
-## 📦 How to Install
+## How to Install
 
 1. Compress all files and directories in this folder (including `common`, `META-INF`, `xiaomi_files`, `install.sh`, `module.prop`, `LICENSE`, `README.md`, `changelog.txt`) into a standard `.zip` file.
    > **Note**: Make sure `install.sh` and `module.prop` are at the root level of the archive, not nested inside another folder.
@@ -42,7 +42,7 @@ Miyabi Core thermal optimizer focused on reducing aggressive throttling and impr
 
 ---
 
-## ⚠️ Warning & Disclaimer
+## Warning & Disclaimer
 
 * **Use at your own risk**: By removing software throttling limits, your device will run hotter than usual under sustained heavy loads (like 3D gaming or benchmarking).
 * **Cooling Recommendation**: It is **strongly recommended** to use an external fan cooler (phone cooler) when playing games for extended periods. This keeps your battery and SoC cool, preserving their long-term health.
@@ -50,7 +50,7 @@ Miyabi Core thermal optimizer focused on reducing aggressive throttling and impr
 
 ---
 
-## 👥 Credits & Source
+## Credits & Source
 
 - **Developer**: Rama-X2 (Rama Armytha)
 - **Source Code**: [GitHub Repository](https://github.com/Rama-X2/thermal-breaker-miyabi-core)
