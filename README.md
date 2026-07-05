@@ -1,4 +1,4 @@
-# Thermal Breaker Miyabi Core (v3.0.0-Universal)
+# 🌸 Thermal Breaker Miyabi Core
 
 Miyabi Core thermal optimizer focused on reducing aggressive throttling and improving performance stability across all Android devices, chipsets, and ROMs, without disabling hardware safety protections.
 
