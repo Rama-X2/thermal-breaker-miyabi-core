@@ -1,6 +1,19 @@
 ======================================================
-           CHANGELOG - THERMAL BREAKER MIYABI CORE
+       CHANGELOG - THERMAL BREAKER MIYABI CORE
 ======================================================
+
+v4.0.0 (Dynamic Release) - 2026-10-07
+------------------------------------------------------
+* TOTAL ARCHITECTURE REDESIGN: Abandoned the old-school static '.conf' and 0-byte binary files approach.
+* REMOVED: Completely deleted 'xiaomi_files' folder. Hardcoding vendor files causes fast charging bugs and battery reading freezes on different hardware variations.
+* ADDED: 100% Pure Dynamic Kernel Engine. The module now works purely by hunting down active thermal limiters directly in the kernel in real-time.
+* ADDED: Advanced MediaTek Graphics Execution Daemon (GED) support for unlocking GPU power on Dimensity/Helio chipsets.
+* ADDED: Supercharged 'system.prop' with extreme gaming overrides (Disables Joyose, GOS, Dynamic FPS, and OEM thermal frameworks).
+* ADDED: Advanced PMIC (Power Management IC) Bypass to prevent the screen from automatically dimming (brightness drop) while gaming, while keeping hardware failsafes intact.
+* ADDED: Dynamic system properties override to bypass Android Framework thermal throttling.
+* IMPROVED: Guardian Daemon is now more battery efficient and supports newer Android dumpsys power outputs.
+* ADDED: Expanded thermal service killer targeting 'thermal-engine-v2', 'thermald', and 'android.hardware.thermal@2.0'.
+* RESULT: Excellent universal compatibility. Features a highly resilient architecture designed to preserve fast-charging capabilities across ALL ROMs and Devices.
 
 v3.0.0 (Universal Release) - 2026-06-30
 ------------------------------------------------------
@@ -9,10 +22,7 @@ v3.0.0 (Universal Release) - 2026-06-30
 * FIXED: Slow charging and battery status freezes. Optimized configs are now conditionally installed only on Xiaomi/POCO/Redmi devices.
 * ADDED: Universal Cooling Device State Locker (Adreno, Mali, and PowerVR GPUs). Locks CPU/GPU throttle levels to maximum performance (state 0) and makes them read-only.
 * ADDED: Dynamic Service Stopper to disable non-essential thermal services while keeping Android's core thermal HAL active.
-* ADDED: Guardian Background Daemon which periodically resets throttle levels when the screen is turned on (saves battery when the phone is sleeping).
-* ADDED: Automatic device and chipset architecture detection in the Magisk installer.
-* REMOVED: Thousands of bloated comment lines in 'uninstall.sh' to optimize module zip size.
-* ADDED: Detailed logging support inside '/data/adb/modules/thermal-breaker-miyabi-core/thermal_breaker.log'.
+* ADDED: Guardian Background Daemon which periodically resets throttle levels when the screen is turned on.
 * ADDED: Explicit support for PowerVR GPUs in the cooling state scanner.
 
 v2.2.0 - Previous Release
